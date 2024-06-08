@@ -2,12 +2,245 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <title>Tours</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <div class="logo">
+            <img src="./src/img/logo.svg" alt="" class="logo-img">
+          </div>
+          <div class="nav-links">
+            <ul class="nav-list">
+              <li class="nav-list-item"><a href="#" class="nav-list-item-link">About us</a></li>
+              <li class="nav-list-item"><a href="#" class="nav-list-item-link">Tours</a></li>
+              <li class="nav-list-item"><a href="#" class="nav-list-item-link">Reviews</a></li>
+              <li class="nav-list-item"><a href="#" class="nav-list-item-link">Gallery</a></li>
+              <li class="nav-list-item"><a href="#" class="nav-list-item-link">Contacts</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1 class="title-1">TOURS TO THE CARPATHIANS FROM LVIV</h1>
+        <h3 class="title-3">Journeys to the very heart of the Carpathians for those who want a real reboot</h3>
+        <div class="hero-wrapper">
+          <button type="submit" class="hero-btn">BOOK A TOUR</button>
+          <ul class="social-links">
+            <li class="social-links-item">
+              <img src="./src/img/telegram.svg" alt="">
+            </li>
+            <li class="social-links-item">
+              <img src="./src/img/instagram.svg" alt="">
+            </li>
+            <li class="social-links-item">
+              <img src="./src/img/facebook.svg" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <h2 class="title-2">About us</h2>
+        <ul class="about-us-list">
+          <li class="about-us-list-item space">
+            <p class="about-us-content">Travel is our life. We have been organizing tours to the Carpathians since 2007 and have never been bored for a single day. The Carpathians are many interesting and unexplored places that are worth visiting and showing them to others.
+            </p>
+          </li>
+          <li class="about-us-list-item">
+            <p class="about-us-content">Coming to the Carpathians will make you forget about the polluted, noisy world and enjoy untouched nature. From picturesque forests to clean rivers and lakes and Carpathian streams between the mountains, which offer magical landscapes and allow you to forget about all problems and unnecessary thoughts.</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+    <section class="our-advantages">
+      <div class="container">
+        <h2 class="title-2">Our advantages</h2>
+        <ul class="adv-images-list">
+          <li class="adv-images-list-item ">
+            <img src="./src/img/Advantages_2.jpg"  alt="">
+          </li>
+          <li class="adv-images-list-item faf">
+            <img src="./src/img/Advantages_4.jpg" alt="">
+          </li>
+          <li class="adv-images-list-item fof">
+            <img src="./src/img/Advantages_3.jpg" alt="">
+          </li>
+        </ul>
+        <ul class="adv-list">
+          <li class="adv-list-item">
+            <img src="./src/img/star.svg" alt="">
+            author's tours
+          </li>
+          <li class="adv-list-item">
+            <img src="./src/img/star.svg" alt="">
+            individual approach
+          </li>
+          <li class="adv-list-item">
+            <img src="./src/img/star.svg" alt="">
+            affordable prices
+          </li>
+          <li class="adv-list-item">
+            <img src="./src/img/star.svg" alt="">
+            comfortable transfer
+          </li>
+          <li class="adv-list-item">
+            <img src="./src/img/star.svg" alt="">
+            professional guides
+          </li>
+          <li class="adv-list-item">
+            <img src="./src/img/star.svg" alt="">
+            accommodation in hotels from 3+ *
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="upcoming-tours">
+      <div class="container">
+        <h2 class="title-2">Upcoming tours</h2>
+        <ul class="tours-list">
+          <li class="tours-list-item">
+            <img src="./src/img/tour-1.jpg" alt="" class="tours-list-item-img">
+            <div class="list-item-text-content">
+              <h4 class="title-4">Ascent to Hoverla</h4>
+              <p class="tours-text-content">From UAH 4,499/person</p>
+              <button class="tours-btn" type="submit">MORE DETAILS</button>
+            </div>
+          </li>
+          <li class="tours-list-item">
+            <img src="./src/img/tour-2.jpg" alt="" class="tours-list-item-img">
+            <div class="list-item-text-content  ">
+              <h4 class="title-4">Ski tour to Bukovel</h4>
+              <p class="tours-text-content">From UAH 7,499/person</p>
+              <button class="tours-btn" type="submit">MORE DETAILS</button>
+            </div>
+          </li>
+          <li class="tours-list-item">
+            <img src="./src/img/tour-3.jpg" alt="" class="tours-list-item-img">
+            <div class="list-item-text-content">
+              <h4 class="title-4">Week in Carpathians</h4>
+              <p class="tours-text-content">From UAH 9,999/person</p>
+              <button class="tours-btn" type="submit">MORE DETAILS</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="title-2">Reviews</h2>
+        <ul class="reviews-list">
+          <li class="reviews-list-item">
+            <img src="./src/img/Review_desk.jpg" alt="">
+            <img src="./src/img/rev-1.png" alt="" class="reviews-list-img">
+            <h5 class="title-5">Maria</h5>
+            <p class="reviews-list-item-content">
+              It was really cool! We saw everything - sun, snow, rain, fog! It's very exciting and interesting, you won't regret it - it's worth going and seeing everything with your own eyes. Everything is organized at the highest level.
+            </p>
+          </li>
+          <li class="reviews-list-item">
+            <img src="./src/img/Review_desk.jpg" alt="">
+            <img src="./src/img/rev-2.png" alt="" class="reviews-list-img">
+            <h5 class="title-5">Ostap</h5>
+            <p class="reviews-list-item-content">
+              Good organization, everything went smoothly. Friendly guide Taras told interesting facts about the area and customs throughout the tour.
+            </p>
+          </li>
+          <li class="reviews-list-item">
+            <img src="./src/img/Review_desk.jpg" alt="">
+            <img src="./src/img/rev-3.png" alt="" class="reviews-list-img">
+            <h5 class="title-5">Anita</h5>
+            <p class="reviews-list-item-content">
+              Who is going to the mountains for the first time - this is exactly the tour and the people who organize everything. Guide Makar is interesting stories, selection of a route for a comfortable ascent, motivation and support.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <h2 class="title-2">Gallery</h2>
+        <ul class="gallery-list">
+          <li class="gallery-list-item">
+            <img src="./src/img/gal-1.jpg" alt="">
+          </li>
+          <li class="gallery-list-item">
+            <img src="./src/img/gal-2.jpg" alt="">
+          </li>
+        </ul>
+        <ul class="btn-list-right-left">
+          <li class="btn-list-left">
+            <button class="btn-left"><img src="./src/img/left.svg" alt=""></button>
+          </li>
+          <li  class="btn-list-right">
+            <button class="btn-left"><img src="./src/img/right.svg" alt=""></button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <form class="form">
+          <h3 class="form-title">Do you have any questions?</h3>
+          <p class="form-content">You can leave your questions here and our manager will call you back within 10 minutes</p>
+          <ul class="form-input-list">
+            <li class="form-input-list-item">
+              <input type="text" placeholder="Your name*" class="form-input">
+            </li>
+            <li class="form-input-list-item">
+              <input type="phone" placeholder="Phone number*" class="form-input">
+            </li>
+            <li class="form-input-list-item">
+              <input type="text" placeholder="What would you like to know?" class="form-input">
+            </li>
+          </ul>
+          <button type="submit" class="form-btn">CALL ME</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <h3 class="footer-title">Contacts</h3>
+          <ul class="footer-inf-list">
+            <li class="footer-inf-list-item">
+              <img src="./src/img/place.svg" alt="" class="footer-img">
+              <p class="footer-inf">Lviv, st. Doroshenko, 44 ​​k</p>
+            </li>
+            <li class="footer-inf-list-item">
+              <img src="./src/img/phone.svg" alt="" class="footer-img">
+              <p class="footer-inf">+38 (097) 162 -67-90​k</p>
+            </li>
+            <li class="footer-inf-list-item">
+              <img src="./src/img/email.svg" alt="" class="footer-img">
+              <p class="footer-inf">mandrykarpaty@gmail.com</p>
+            </li>
+            <ul class="footer-soc-list">
+              <li class="footer-soc-list-item">
+                <img src="./src/img/telegram.svg" alt="">
+              </li>
+              <li class="footer-soc-list-item">
+                <img src="./src/img/instagram.svg" alt="">
+              </li>
+              <li class="footer-soc-list-item">
+                <img src="./src/img/facebook.svg" alt="">
+              </li>
+            </ul>
+        </div>
+        </ul>
+        <p class="copy">&copy;Сreated by LelekaSoft</p>
+      </div>
+    </footer>
   </body>
 </html>
