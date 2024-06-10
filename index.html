@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="./src/main.js" defer></script> 
     <title>Tours</title>
   </head>
   <body>
@@ -37,13 +39,26 @@
           <button type="submit" class="hero-btn">BOOK A TOUR</button>
           <ul class="social-links">
             <li class="social-links-item">
-              <img src="./src/img/telegram.svg" alt="">
+              <a href="#" class="social-icon-a">
+                <svg class="soc_icon_svg" fill="#9b86a5" width="40" height="40">
+                    <use href ="./src/img/symbol-defs.svg#icon-telegram"></use>
+                </svg>
+              </a>
+              
             </li>
             <li class="social-links-item">
-              <img src="./src/img/instagram.svg" alt="">
+              <a href="#" class="social-icon-a">
+                <svg class="soc_icon_svg" width="40" height="40">
+                    <use href ="./src/img/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-links-item">
-              <img src="./src/img/facebook.svg" alt="">
+              <a href="#" class="social-icon-a">
+                <svg class="soc_icon_svg" width="40" height="40">
+                    <use href ="./src/img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -242,5 +257,40 @@
         <p class="copy">&copy;Сreated by LelekaSoft</p>
       </div>
     </footer>
+    <div class="back-drop ">
+      <div class="modal-menu">
+        <div class="close-btn-wrapper">
+          <button type="button" class="modal-menu-close-btn">
+            <img src="./src/img/close.svg" alt="" width="40" height="40" >
+          </button>
+        </div>
+        <h3 class="modal-title">Book a tour</h3>
+        <p class="modal-text-content">
+          You can leave your application here and our manager will call you within 10 minutes
+        </p>
+        <form class="modal-form">
+          <input class="modal-form-input" type="text" placeholder="Your name*">
+          <input class="modal-form-input" type="number" placeholder="Phone number*">
+        </form>
+        <div class="check-boxes">
+          <label class="custom-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Ascent to Hoverla
+          </label>
+          <label class="custom-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Ski tour to Bukovel
+          </label>
+          <label class="custom-checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Week in Carpathians
+          </label>
+        </div>
+        <button type="button" class="modal-menu-btn">CALL ME</button>
+      </div>
+    </div>
   </body>
 </html>

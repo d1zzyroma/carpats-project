@@ -101,6 +101,28 @@
   gap: 32px;
 }
 
+.social-icon-a {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.soc_icon_svg {
+  width: 40px;
+  height: 40px;
+  --color1: white; /* Початковий колір */
+  transition: fill 0.3s ease; /* Плавний перехід кольору */
+}
+
+.social-icon-a:hover .soc_icon_svg {
+  --color1:rgba(91, 134, 161, 1);
+}
+
+.soc_icon_svg use {
+  fill: var(--color1);
+}
+
+
+
 .title-2{
   font-family: Montserrat;
   font-size: 68px;
@@ -421,5 +443,165 @@
   line-height: 21.86px;
   color: rgba(163, 165, 163, 1);
   margin-top: 64px;
+}
+
+.back-drop {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-menu {
+  width: 774px;
+  min-height: 745px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: rgba(247, 251, 251, 1);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 40px 100px 60px 100px;
+}
+
+.is-open{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-menu-close-btn{
+  margin-top: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgba(247, 251, 251, 1);
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.modal-title{
+  margin-top: 76px;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.modal-text-content{
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+.modal-form-input{
+  width: 575px;
+  height: 37px;
+  border: none;
+  background-color: rgba(247, 251, 251, 1);
+  border-bottom: 1px solid rgba(163, 165, 163, 1);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-align: left;
 
 }
+
+/* Приховуємо стандартний чекбокс */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.26px;
+  text-align: left;
+
+}
+
+/* Створюємо кастомний чекбокс */
+.custom-checkbox .checkmark {
+  width: 24px;
+  height: 24px;
+  background-color: #eee;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  margin-right: 12px;
+  display: inline-block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(247, 251, 251, 1);
+  border: 1px solid black;
+  border-radius: 0%;
+}
+
+.custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+  display: block;
+}
+
+
+.custom-checkbox .checkmark:after {
+  width: 12px; 
+  height: 10px; 
+  background-image: url('../img/Vector.svg');
+  background-size: cover;
+}
+
+.check-boxes{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+.modal-menu-btn{
+  width: 575px;
+  height: 69px;
+  border: none;
+  background-color: rgba(91, 134, 161, 1);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color:rgba(247, 251, 251, 1);
+
+
+}
+
