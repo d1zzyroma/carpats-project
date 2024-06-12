@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="./src/main.js" defer></script> 
+    
+
     <title>Tours</title>
   </head>
   <body>
@@ -17,8 +19,22 @@
       <div class="container">
         <nav class="navigation">
           <div class="logo">
-            <img src="./src/img/logo.svg" alt="" class="logo-img">
+            <div>
+              <a href="#">
+                <img src="./src/img/logo.svg" width="40" height="40" class="logo-mob">
+              </a>
+            </div>
+            <div>
+              <button type="button" class="menu-btn">
+                <svg width="40" height="40" class="test">
+                  <use href="./src/img/symbol-defs.svg#icon-menu_btn"></use>
+                </svg>
+            </div>
+            </button>
           </div>
+          <a href="#">
+            <img src="./src/img/logo.svg" width="56" height="58" class="logo-desk">
+          </a>
           <div class="nav-links">
             <ul class="nav-list">
               <li class="nav-list-item"><a href="#" class="nav-list-item-link">About us</a></li>
@@ -84,38 +100,39 @@
         <h2 class="title-2">Our advantages</h2>
         <ul class="adv-images-list">
           <li class="adv-images-list-item ">
-            <img src="./src/img/Advantages_2.jpg"  alt="">
+            <img src="./src/img/Advantages_2.jpg"  alt="" class="adv-image-one">
           </li>
           <li class="adv-images-list-item faf">
-            <img src="./src/img/Advantages_4.jpg" alt="">
+            <img src="./src/img/Advantages_4.jpg" alt="" class="adv-image-two">
           </li>
           <li class="adv-images-list-item fof">
-            <img src="./src/img/Advantages_3.jpg" alt="">
+            <img src="./src/img/Advantages_3.jpg" alt="" class="adv-image-three">
           </li>
         </ul>
+        
         <ul class="adv-list">
           <li class="adv-list-item">
-            <img src="./src/img/star.svg" alt="">
+            <img src="./src/img/star.svg" alt="" class="adv-list-item-img">
             author's tours
           </li>
           <li class="adv-list-item">
-            <img src="./src/img/star.svg" alt="">
+            <img src="./src/img/star.svg" alt="" class="adv-list-item-img">
             individual approach
           </li>
           <li class="adv-list-item">
-            <img src="./src/img/star.svg" alt="">
+            <img src="./src/img/star.svg" alt="" class="adv-list-item-img">
             affordable prices
           </li>
           <li class="adv-list-item">
-            <img src="./src/img/star.svg" alt="">
+            <img src="./src/img/star.svg" alt="" class="adv-list-item-img">
             comfortable transfer
           </li>
           <li class="adv-list-item">
-            <img src="./src/img/star.svg" alt="">
+            <img src="./src/img/star.svg" alt="" class="adv-list-item-img">
             professional guides
           </li>
           <li class="adv-list-item">
-            <img src="./src/img/star.svg" alt="">
+            <img src="./src/img/star.svg" alt="" class="adv-list-item-img">
             accommodation in hotels from 3+ *
           </li>
         </ul>
@@ -124,9 +141,9 @@
     <section class="upcoming-tours">
       <div class="container">
         <h2 class="title-2">Upcoming tours</h2>
-        <ul class="tours-list">
+        <ul class="tours-list ">
           <li class="tours-list-item">
-            <img src="./src/img/tour-1.jpg" alt="" class="tours-list-item-img">
+            <img src="./src/img/tour-1.jpg" alt="" class="tours-list-item-img" >
             <div class="list-item-text-content">
               <h4 class="title-4">Ascent to Hoverla</h4>
               <p class="tours-text-content">From UAH 4,499/person</p>
@@ -150,14 +167,62 @@
             </div>
           </li>
         </ul>
-      </div>
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="tours-list-item">
+                  <img src="./src/img/tour-1.jpg" alt="" class="tours-list-item-img">
+                  <div class="list-item-text-content">
+                    <h4 class="title-4">Ascent to Hoverla</h4>
+                    <p class="tours-text-content">From UAH 4,499/person</p>
+                    <button class="tours-btn" type="submit">MORE DETAILS</button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="tours-list-item">
+                  <img src="./src/img/tour-2.jpg" alt="" class="tours-list-item-img">
+                  <div class="list-item-text-content  ">
+                    <h4 class="title-4">Ski tour to Bukovel</h4>
+                    <p class="tours-text-content">From UAH 7,499/person</p>
+                    <button class="tours-btn" type="submit">MORE DETAILS</button>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="tours-list-item">
+                  <img src="./src/img/tour-3.jpg" alt="" class="tours-list-item-img">
+                  <div class="list-item-text-content">
+                    <h4 class="title-4">Week in Carpathians</h4>
+                    <p class="tours-text-content">From UAH 9,999/person</p>
+                    <button class="tours-btn" type="submit">MORE DETAILS</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+              <svg>
+                <use href="./src/img/symbol-defs.svg#icon-right" ></use>
+              </svg>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+              <svg>
+                <use href="./src/img/symbol-defs.svg#icon-right" ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div> 
     </section>
     <section class="reviews">
       <div class="container">
         <h2 class="title-2">Reviews</h2>
         <ul class="reviews-list">
           <li class="reviews-list-item">
-            <img src="./src/img/Review_desk.jpg" alt="">
+            <img src="./src/img/Review_desk.jpg" alt="" class="reviews-bg-img">
             <img src="./src/img/rev-1.png" alt="" class="reviews-list-img">
             <h5 class="title-5">Maria</h5>
             <p class="reviews-list-item-content">
@@ -165,15 +230,15 @@
             </p>
           </li>
           <li class="reviews-list-item">
-            <img src="./src/img/Review_desk.jpg" alt="">
+            <img src="./src/img/Review_desk.jpg" alt="" class="reviews-bg-img">
             <img src="./src/img/rev-2.png" alt="" class="reviews-list-img">
             <h5 class="title-5">Ostap</h5>
             <p class="reviews-list-item-content">
               Good organization, everything went smoothly. Friendly guide Taras told interesting facts about the area and customs throughout the tour.
             </p>
           </li>
-          <li class="reviews-list-item">
-            <img src="./src/img/Review_desk.jpg" alt="">
+          <li class="reviews-list-item display">
+            <img src="./src/img/Review_desk.jpg" alt="" class="reviews-bg-img ">
             <img src="./src/img/rev-3.png" alt="" class="reviews-list-img">
             <h5 class="title-5">Anita</h5>
             <p class="reviews-list-item-content">
@@ -183,7 +248,7 @@
         </ul>
       </div>
     </section>
-    <section class="gallery">
+    <!-- <section class="gallery">
       <div class="container">
         <h2 class="title-2">Gallery</h2>
         <ul class="gallery-list">
@@ -203,8 +268,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="questions">
+    </section> -->
+    <!-- <section class="questions">
       <div class="container">
         <form class="form">
           <h3 class="form-title">Do you have any questions?</h3>
@@ -223,8 +288,8 @@
           <button type="submit" class="form-btn">CALL ME</button>
         </form>
       </div>
-    </section>
-    <footer class="footer">
+    </section> -->
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <h3 class="footer-title">Contacts</h3>
@@ -243,21 +308,33 @@
             </li>
             <ul class="footer-soc-list">
               <li class="footer-soc-list-item">
-                <img src="./src/img/telegram.svg" alt="">
+                <a href="#" class="social-icon-a">
+                  <svg class="soc_icon_svg" fill="#9b86a5" width="40" height="40">
+                      <use href ="./src/img/symbol-defs.svg#icon-telegram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="footer-soc-list-item">
-                <img src="./src/img/instagram.svg" alt="">
+                <a href="#" class="social-icon-a">
+                  <svg class="soc_icon_svg" width="40" height="40">
+                      <use href ="./src/img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="footer-soc-list-item">
-                <img src="./src/img/facebook.svg" alt="">
+                <a href="#" class="social-icon-a">
+                  <svg class="soc_icon_svg" width="40" height="40">
+                      <use href ="./src/img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
         </div>
         </ul>
         <p class="copy">&copy;Сreated by LelekaSoft</p>
       </div>
-    </footer>
-    <div class="back-drop ">
+    </footer> -->
+    <!-- <div class="back-drop ">
       <div class="modal-menu">
         <div class="close-btn-wrapper">
           <button type="button" class="modal-menu-close-btn">
@@ -291,6 +368,9 @@
         </div>
         <button type="button" class="modal-menu-btn">CALL ME</button>
       </div>
-    </div>
+    </div> -->
+
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="./src/main.js" defer type="module"></script> 
 </html>

@@ -4,31 +4,68 @@
   padding: 0;
 }
 .container {
-  max-width: 1170px;
+  min-width: 311px;
   margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
 }
 
+@media screen and (min-width:768px) {
+  .container{
+    max-width: 768px;
+    padding: 0 20px 0 20px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .container{
+    max-width: 1170px;
+    padding: 0;
+  }
+}
+
+ul{
+  list-style: none;
+}
+
+/* --------------------------HEADER----------------------- */
+/* --------------------------HEADER----------------------- */
+/* --------------------------HEADER----------------------- */
 .header {
-  margin-top: 40px;
+  margin-top: 20px;
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
+  min-width: 311px;
+  padding: 0 5px 0 5px;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.menu-btn{
+  border:none;
+  background-color: transparent;
+  display: inline-block;
 }
+.test{
+  fill: #f7fbfb;
+}
+
 
 .logo {
-  margin-right: 318px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo-mob{
+  width: 40;
+  height: 40px;
 }
 
+.logo-desk{
+  display: none;
+}
 .nav-list {
-  list-style: none;
-  display: flex;
+  display: none;
+
   gap: 80px;
 }
 
@@ -46,59 +83,63 @@
   border-bottom: 2px solid rgba(247, 251, 251, 1);
 }
 
+
+/* --------------------------HERO----------------------- */
+/* --------------------------HERO----------------------- */
+/* --------------------------HERO----------------------- */
+
 .hero{
-  padding-top: 280px;
-  padding-bottom: 293px;
+  /* padding-top: 280px; */
+  padding-top: 188px;
+  padding-bottom: 193px;
   background: url(../img/hero_desk_1920.jpg) no-repeat;
   background-size: cover;
-  margin-bottom: 80px;
+  
+  margin-bottom: 52px;
 }
 .title-1 {
   font-family: Montserrat;
-  font-size: 88px;
+  font-size: 40px;
   font-weight: 400;
   line-height: 1.2em;
   text-align: center;
-  color: rgba(247, 251, 251, 1);
-  margin-bottom: 40px;
-
+  color:rgba(247, 251, 251, 1);
+  margin-bottom: 60px;
 }
 .title-3 {
   font-family: Montserrat;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.2em;
-  max-width: 675px;
-  margin: 0 auto;
+  line-height: 19.5px;
   text-align: center;
-  margin-bottom: 60px;
   color: rgba(247, 251, 251, 1);
+  margin-bottom: 88px;
 }
 
 .hero-wrapper {
   display: flex;
 }
 .hero-btn {
-  width: 575px;
-  height: 69px;
+  width: 285px;
+  height: 52px;
   background-color: rgba(91, 134, 161, 1);
   margin: 0 auto;
   text-align: center;
   display: block;
   border: none;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.2em;
   color: rgba(247, 251, 251, 1);
-  
+  cursor: pointer;
+}
 
+.hero-btn:hover{
+  background-color: rgba(27, 29, 27, 1);
 }
 .social-links {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+  display: none;
 }
 
 .social-icon-a {
@@ -122,183 +163,257 @@
 }
 
 
-
+/* --------------------------ABOUT----------------------- */
+/* --------------------------ABOUT----------------------- */
+/* --------------------------ABOUT----------------------- */
 .title-2{
   font-family: Montserrat;
-  font-size: 68px;
+  font-size: 32px;
   font-weight: 400;
-  line-height: 82.89px;
+  line-height: 1.2em;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 28px;
+
 }
 
-.about-us-list{
-  list-style: none;
-}
 .space{
   margin-bottom: 8px;
 }
 .about-us-content{
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 29.26px;
+  line-height: 19.5px;
   text-align: left;
 
 }
 
 .about-us{
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
+  margin-bottom: 52px;
 }
 
+
+/* --------------------------ADV----------------------- */
+/* --------------------------ADV----------------------- */
+/* --------------------------ADV----------------------- */
 .our-advantages{
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
+  margin-bottom: 52px;
+  display: flex;
+  
 }
-.adv-images-list{
-  list-style: none;
+/* .adv-images-list{
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+  margin: o auto;
+} */
 
 .faf{
-  margin-top: 80px;
+  /* margin-top: 80px; */
+  display: none;
+}
+.adv-image-one{
+  width: 315px;
+  height: 554px;
 }
 
 .fof{
-  margin-top: 160px;
+  /* margin-top: 160px; */
+  display: none;
 }
 
 .adv-list{
-  list-style: none;
   display: flex;
   flex-direction: column;
-  height: 510px;
+  height: 380px;
   justify-content: space-around;
   gap: 24px;
   position: absolute;
-  transform: translate(270px, -593.5px);
+  transform: translate(0px, -440px);
 }
 
 .adv-list-item{
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: rgba(247, 251, 251, 1);
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 29.26px;
+  line-height: 17.07px;
   text-align: left;
-  width: 630px;
-  height: 64px;
+  width: 315px;
+  height: 40px;
   top: 1941px;
   left: 406px;
   gap: 0px;
   opacity: 0px;
   background-color: rgba(91, 134, 161, 1);
 }
+
+.adv-list-item-img{
+  margin-right: 12px;
+}
+
+
+/* --------------------------Tours----------------------- */
+/* --------------------------TOURS----------------------- */
+/* --------------------------TOURs----------------------- */
 .tours-list{
-  list-style: none;
-  display: flex;
+  display: none;
   gap: 20px;
 }
-.tours-list-item {
 
-  
+.tours-list-item {
   border: 1px solid rgba(91, 134, 161, 1);
   background-color: rgba(247, 251, 251, 1);
   /* padding: 0 20px 48px 20px; */
-  
+  max-width: 377px;  
 }
 
 .list-item-text-content{
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  
+ 
+  gap: 16px;
+  max-width: 376px;
   padding: 0 20px 48px 20px;
+  border-top: none;
 }
 
 .tours-list-item-img{
-  margin-bottom: 44px;
+  width: 310px;
+  height: 338px;
+  margin-bottom: 28px;
 }
 .title-4 {
   font-family: Montserrat;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 1.2em;
+  line-height: 24.38px;
   text-align: left;
+
 }
 .tours-text-content {
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 29.26px;
+  line-height: 19.5px;
   text-align: left;
-
 }
 .tours-btn {
-  margin-top: 16px;
-  width: 337px;
-  height: 69px;
+  margin-top: 4px;
+  width: 270px;
+  height: 53px;
   background: rgba(91, 134, 161, 1);
   border: none;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.2em;
   color: rgba(247, 251, 251, 1);
+  cursor: pointer;
+}
+.tours-btn:hover{
+  background-color: rgba(27, 29, 27, 1);
 }
 .upcoming-tours{
-  margin-bottom: 80px;
+  margin-bottom: 102px;
 }
 
+.splide{
+  max-width: 311px;
+  margin: 0 auto;
+}
+
+/* Стилі для стрілок */
+.splide__arrows {
+  top: 40px;
+  left: 72px;
+  position: relative; 
+  bottom: -24px; 
+  z-index: 1;
+  margin: 0 auto;
+
+}
+
+.splide__arrow {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  margin-right: 140px;
+}
+/* --------------------------REV----------------------- */
+/* --------------------------REV----------------------- */
+/* --------------------------REV----------------------- */
 .reviews-list{
   display: flex;
-  list-style: none;
-  gap: 20px;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 auto;
+  width: 310px;
 }
-
+.reviews-bg-img{
+  width: 308px;
+  height: 134px;
+}
+.reviews-list-img{
+  width: 100px;
+  height: 100px;
+}
 .reviews-list-item{
-  height: 570px;
+  
+  height: 452px;
   border: 1px solid rgba(91, 134, 161, 1);
+  background-color: rgba(247, 251, 251, 1);
 }
 
 .reviews-list-img{
   position: absolute;
-  transform: translate(-200%, 50%);
+  transform: translate(-200px, 80px);
+}
+
+.display{
+  display: none;
 }
 
 .title-5{
-  text-align: center;
   font-family: Montserrat;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 1.2em;
-  margin-top: 83px;
+  line-height: 24.38px;
+  text-align: center;
+  margin-top: 70px;
   color: rgba(91, 134, 161, 1);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .reviews-list-item-content{
-  text-align: left;
-  padding: 0 28px 103px 28px;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 24.38px;
+  line-height: 1.2em;
+  text-align: left;
+  padding: 0 35px 0 35px;
+    
 }
 
 .reviews{
-  margin-bottom: 80px;
+  margin-bottom: 52px;
 }
 
+/* --------------------------GAL----------------------- */
+/* --------------------------GAL----------------------- */
+/* --------------------------GAl----------------------- */
 .gallery-list{
   display: flex;
-  list-style: none;
   gap: 20px;
 }
 
 .btn-list-right-left{
   display: flex;
-  list-style: none;
   justify-content: center;
   gap: 60px;
   margin-top: 40px;
@@ -315,6 +430,10 @@
   margin-bottom: 80px;
 }
 
+
+/* --------------------------QUE----------------------- */
+/* --------------------------QUE----------------------- */
+/* --------------------------QUE----------------------- */
 .questions{
   background-image: url(../img/que.jpg);
   background-repeat: no-repeat;
@@ -337,7 +456,6 @@
 .form-input-list{
   display: flex;
   flex-direction: column;
-  list-style: none;
   gap: 28px;
   margin-top: 44px;
   margin-bottom: 44px;
@@ -359,6 +477,8 @@
   text-align: center;
   margin-top: 32px;
 }
+
+
 .form-input {
   width: 575px;
   border: none;
@@ -369,7 +489,11 @@
   line-height: 29.26px;
   color: rgba(32, 35, 33, 1);
   background-color: rgba(247, 251, 251, 1);
+}
 
+.form-input:focus, .modal-form-input{
+  border-bottom: 1px solid rgba(163, 165, 163, 1);
+  outline: none;
 }
 .form-btn {
   width: 579px;
@@ -381,8 +505,16 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 29.26px;
+  cursor: pointer;
 }
 
+.form-btn:hover{
+  background-color: rgba(27, 29, 27, 1);
+}
+
+/* --------------------------FOOTER----------------------- */
+/* --------------------------FOOTER----------------------- */
+/* --------------------------FOOTER----------------------- */
 
 .footer{
   background-color: rgba(32, 35, 33, 1);
@@ -405,7 +537,6 @@
   color: rgba(247, 251, 251, 1);
 }
 .footer-inf-list {
-  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -432,7 +563,6 @@
 .footer-soc-list{
   display: flex;
   gap: 32px;
-  list-style: none;
 }
 
 .copy{
@@ -444,6 +574,10 @@
   color: rgba(163, 165, 163, 1);
   margin-top: 64px;
 }
+
+/* --------------------------MODAL----------------------- */
+/* --------------------------MODAL----------------------- */
+/* --------------------------MODAL----------------------- */
 
 .back-drop {
   position: fixed;
@@ -576,7 +710,6 @@
   display: block;
 }
 
-
 .custom-checkbox .checkmark:after {
   width: 12px; 
   height: 10px; 
@@ -601,7 +734,457 @@
   font-weight: 500;
   line-height: 1.2em;
   color:rgba(247, 251, 251, 1);
-
-
 }
+
+
+/* ----------------------------TABLET---------------------------- */
+/* ----------------------------TABLET---------------------------- */
+/* ----------------------------TABLET---------------------------- */
+@media screen and (min-width:768px) {
+  .title-1{
+    font-family: Montserrat;
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 82.89px;
+    text-align: center;
+    
+  }
+  .logo-mob{
+    width: 56px;
+    height: 58px;
+  }
+  .title-3{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: center;
+    width: 470px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .hero{
+    padding-top: 180px;
+    padding-bottom: 185px;
+    margin-bottom: 80px;
+  }
+
+  .title-2{
+    font-family: Montserrat;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 63.39px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .about-us{
+    margin-bottom: 80px;
+  }
+
+  .about-us-content{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    text-align: left;
+  }
+
+  .adv-images-list{
+    display: flex;
+    gap: 20px; 
+  }
+
+  .our-advantages{
+    margin-bottom: 80px; 
+    margin-bottom: 52px;
+    display: block;
+  }
+
+  .faf{
+    display: block;
+  }
+
+  .adv-image-two{
+    margin-top: 203px;
+  }
+
+  .adv-image-two, .adv-image-one{
+    width: 354px;
+    height: 441px;
+  }
+  
+  .fof{
+    display: none;
+  }
+  
+  .adv-list{
+    height: 484px;
+    gap: 20px;
+    transform: translate(50px, -570px);
+  }
+  
+  .adv-list-item{
+    padding-left: 44px;
+    width: 630px; 
+    height: 64px;
+  }
+
+  .tours-list-item {
+    max-width: 354px;
+  }
+
+  .tours-list-item-img{
+    width: 353px;
+    height: 357px;
+    /* width: 376px; */
+    margin-bottom: 48px;
+  }
+
+  .tours-list-item{
+    width: 354px;
+  }
+
+  .splide{
+    min-width: 740px;
+    margin: 0 auto;
+  }
+
+  .tours-btn {
+    margin-top: 20px;
+    width: 314px;
+    height: 56px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+  
+
+  }
+
+  .title-4{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2em;
+  }
+  
+  .tours-text-content {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2em;
+  }
+
+  .list-item-text-content{
+    gap: 20px; 
+  }
+
+  .splide__arrows {
+    top: 40px;
+    left: 280px;
+    position: relative; 
+    bottom: -24px; 
+    z-index: 1;
+    margin: 0 auto;
+  
+  }
+  
+  .splide__arrow {
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    margin-right: 570px;
+  }
+
+  .reviews-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+  }
+  .reviews-bg-img{
+    width: 354px;
+    height: 134px;
+  }
+  .reviews-list-item{
+    height: 504px;
+    border: 1px solid rgba(91, 134, 161, 1);
+  }
+  
+  .reviews-list-img{
+    position: absolute;
+    transform: translate(-225%, 80%);
+  }
+
+  
+  .display{
+    display: none;
+  }
+  
+  .title-5{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: center;    
+    margin-top: 74px;
+    color: rgba(91, 134, 161, 1);
+    margin-bottom: 24px;
+  }
+  
+  .reviews-list-item-content{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    text-align: left;
+    
+    padding: 0 20px 0 20px;
+  }
+}
+
+
+/* ----------------------------DESK---------------------------- */
+/* ----------------------------DESK---------------------------- */
+/* ----------------------------DESK---------------------------- */
+@media screen and (min-width:1440px) {
+  .nav-list{
+    display: flex;
+  }
+
+  .menu-btn{
+    display: none;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .logo-desk{
+    display: block;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title-1{
+    font-family: Montserrat;
+    font-size: 88px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: center;
+    color: rgba(247, 251, 251, 1);
+    margin-bottom: 40px;
+
+  }
+
+  .title-3{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34.13px;
+    text-align: center;
+    min-width: 675px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .hero{
+    padding-top: 280px;
+    padding-bottom: 293px;
+    margin-bottom: 80px;
+  }
+
+  .hero-btn{
+    width: 575px;
+    height: 69px; 
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2em;
+  }
+
+  .social-links{
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+  }
+  .title-2{
+    font-family: Montserrat;
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 82.89px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .about-us{
+    margin-bottom: 80px;
+  }
+
+  .about-us-content{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: left;
+  }
+  .our-advantages{
+    margin-bottom: 80px; 
+    margin-bottom: 52px;
+    display: block;
+  }
+
+  .faf{
+    display: block;
+  }
+  .fof{
+    display: block;
+  }
+
+  .adv-image-three{
+    margin-top: 80px;
+  }
+
+  .adv-image-one, .adv-image-three{
+    width: 377px;
+    height: 588px;
+  }
+
+  .adv-image-two{
+    width: 377px;
+    height: 507px;
+    margin-top: 80px;
+  }
+
+  
+  .adv-list{
+    height: 514px;
+    gap: 20px;
+    transform: translate(270px, -593.5px);
+  }
+  
+  .adv-list-item{
+    padding-left: 44px;
+    width: 630px; 
+    height: 64px;
+  }
+
+  .splide{
+    display: none;
+  }
+
+  .tours-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .tours-list-item {
+    border: 1px solid rgba(91, 134, 161, 1);
+    background-color: rgba(247, 251, 251, 1);
+    /* padding: 0 20px 48px 20px; */
+    min-width: 377px;
+  }
+  
+  .list-item-text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 376px;
+    padding: 0 20px 48px 20px;
+    border-top: none;
+  }
+  
+  .tours-list-item-img{
+    height: 438px;
+    width: 376px;
+    margin-bottom: 28px;
+  }
+  .title-4 {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: left;
+  }
+  .tours-text-content {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    text-align: left;
+
+  }
+  .tours-btn {
+    margin-top: 16px;
+    width: 337px; 
+    height: 69px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2em;
+  }
+  .upcoming-tours{
+    margin-bottom: 80px;
+  }
+
+  .reviews-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .display{
+    display: block;
+  }
+  .reviews-bg-img{
+    width: 377px;
+    height: 134px;
+  }
+  .reviews-list-item{
+    height: 570px;
+    border: 1px solid rgba(91, 134, 161, 1);
+  }
+  .reviews-list-img{
+    width: 125px;
+    height: 125px;
+  }
+  .reviews-list-img{
+    position: absolute;
+    transform: translate(-200%, 50%);
+  }
+  
+  .title-5{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-top: 83px;
+    color: rgba(91, 134, 161, 1);
+    margin-bottom: 24px;
+  }
+  
+  .reviews-list-item-content{
+    text-align: left;
+    padding: 0 28px 103px 28px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+  }
+  
+  .reviews{
+    margin-bottom: 80px;
+  }
+}
+
+
+
+
 
